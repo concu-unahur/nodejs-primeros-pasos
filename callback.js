@@ -1,5 +1,5 @@
-function siguiente(x, done) {
-  done(x + 1)
+function siguiente(x, next) {
+  next(x + 1)
 }
 
 siguiente(2, resultado => { 
