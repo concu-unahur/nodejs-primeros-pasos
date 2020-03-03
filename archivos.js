@@ -21,5 +21,8 @@ function procesarArchivo(error, datos) {
   }
 }
 
+// El segundo parámetro es necesario para que NodeJS sepa que queremos leerlo como String
+// Si no lo pasamos devuelve un Buffer (una chorrera de bytes).
 fs.readFile('./assets/gatitos.txt', 'utf8', procesarArchivo);
+
 console.log('Esta línea se ejecuta inmediatamente después de la anterior, puede que se haya leído el archivo o puede que no')
